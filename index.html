@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RESTROB</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   </head>
@@ -20,22 +20,39 @@
           </a>
 
           <div class="navbar-brand">
-            <a href="index.html"><h1>Pruthvi's Kitchen</h1></a>
+            <a href="index.html"><h1>Pruthvi's Kitchen<sup>&copy;</sup></h1></a>
             <p>
               <img src="images/masterlogo.png" alt="Masterchef certification">
               <span>Masterchef certified</span>
             </p>
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-         </button
-
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:410-602-5008">
+                <span>9441012780</span></a><div>Available on Zomato</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navba-->
       </div>
     </nav>
 
